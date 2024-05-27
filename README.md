@@ -1,6 +1,6 @@
 # erc20-base-max-supply
 
-ERC20BaseMaxSupply inherits from [Thirdweb's ERC20Base](https://github.com/thirdweb-dev/contracts/blob/main/contracts/base/ERC20Base.sol) with adding constraint maximum total supply
+ERC20BaseMaxSupply inherits from [Thirdweb's ERC20Base](https://github.com/thirdweb-dev/contracts/blob/main/contracts/base/ERC20Base.sol) with adding constraint maximum total supply. Ensure we get an error when trying to mint exceed the limit ![Exceed max total supply](./arts/exceed-max-total-supply.png)
 
 ## Prerequisites
 
@@ -17,6 +17,14 @@ The following tools need to be installed:
 | Build Tools          | [`thirdweb CLI`](https://github.com/thirdweb-dev/js/tree/main/legacy_packages/cli) provides tools to create, build, and deploy projects using thirdweb tools and infrastructure. Using the CLI, you can create new projects with the SDK configured, build, publish and deploy smart contracts, generate types while developing, upload files to IPFS, and more, [hardhat-javascript-starter](https://github.com/thirdweb-example/hardhat-javascript-starter)  thirdweb contracts starter project for Hardhat & TypeScript|
 | Coding Standard      | [solhint](https://github.com/protofire/solhint) is an open-source project to provide a linting utility for Solidity code.                                                                  |
 | Useful Links         | [solidity cheatsheet](https://docs.soliditylang.org/en/develop/cheatsheet.html) quick reference solidity syntax, [Introduction to Smart Contracts](https://docs.soliditylang.org/en/develop/introduction-to-smart-contracts.html) understand basic knowledge, [Structure of a Contract](https://docs.soliditylang.org/en/develop/structure-of-a-contract.html) |
+
+## Lint the project
+
+```bash
+npm run lint
+# or
+yarn lint
+```
 
 ## Building the project
 

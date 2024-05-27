@@ -1,6 +1,7 @@
 {
   "name": "erc20-base-max-supply",
   "scripts": {
+    "lint": "solhint contracts/**/*.sol",
     "build": "npx thirdweb@latest detect",
     "deploy": "npx thirdweb@latest deploy",
     "publish": "npx thirdweb@latest publish"
