@@ -53,9 +53,10 @@ yarn deploy
 If you want to publish a version of your contracts publicly, you can use one of the followings command:
 
 ```bash
-npm run publish
+# --access public: publishing scoped public package as default npm account. Remove option [--access public] for private
+npm run publish --access public
 # or
-yarn publish
+yarn publish --access public
 ```
 
 ## Collaboration
