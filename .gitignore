@@ -8,3 +8,7 @@ typechain-types
 #Hardhat files
 cache*
 artifacts*
+
+# Generated log file
+yarn-error.log
+
