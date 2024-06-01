@@ -1,6 +1,6 @@
 # erc20-base-max-supply
 
-ERC20BaseMaxSupply inherits from [Thirdweb's ERC20Base](https://github.com/thirdweb-dev/contracts/blob/main/contracts/base/ERC20Base.sol) with adding constraint maximum total supply. Ensure we get an error when trying to mint exceed the limit ![Exceed max total supply](./arts/exceed-max-total-supply.png)
+ERC20BaseMaxSupply inherits from [Thirdweb's ERC20Base](https://github.com/thirdweb-dev/contracts/blob/main/contracts/base/ERC20Base.sol) with adding constraint maximum total supply. We can retrieve the `maxSupply` or `remainingSupply` by invoking methods with the same name. Ensure we get an error when trying to mint exceed the limit ![Exceed max total supply](./arts/exceed-max-total-supply.png)
 
 ## Prerequisites
 

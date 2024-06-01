@@ -14,7 +14,7 @@
     "@thirdweb-dev/contracts": "^3.8.0",
     "zksync-web3": "^0.14.3"
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/make-everything-simple/erc20-base-max-supply.git"

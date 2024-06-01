@@ -53,4 +53,11 @@ contract ERC20BaseMaxSupply is ERC20Base, IERC20MaxSupply {
         function maxSupply() public view virtual override returns (uint256) {
         return _MAX_TOTAL_SUPPLY;
     }
+
+    /**
+     * @dev Return remaining supply can mint for this contract.
+     */
+    function remainingSupply() public view virtual override returns (uint256) {
+        return (_MAX_TOTAL_SUPPLY - totalSupply());
+    }
 }

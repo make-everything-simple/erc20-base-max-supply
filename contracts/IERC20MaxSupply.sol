@@ -8,4 +8,9 @@ interface IERC20MaxSupply {
      * @dev Return maximum total supply can mint for this contract.
      */
     function maxSupply() external view returns (uint256);
+
+    /**
+     * @dev Return remaining supply can mint for this contract.
+     */
+    function remainingSupply() external view returns (uint256);
 }
