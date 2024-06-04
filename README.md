@@ -42,10 +42,21 @@ to compile your contracts. This will also detect the [Contracts Extensions Docs]
 
 When you're ready to deploy your contracts, just run one of the following command to deploy you're contracts:
 
+* via thirdweb cli
+
 ```bash
 npm run deploy
-# or
+## or
 yarn deploy
+```
+
+* via hardhat
+
+```bash
+#Replace ... with your value
+ADMIN_WALLET=... NAME=... SYMBOL=... MAX_SUPPLY=... NODE_PROVIDER_URL=... DEPLOYER_PRIVATE_KEY=... npm run deploy:hardhat
+## or
+ADMIN_WALLET=... NAME=... SYMBOL=... MAX_SUPPLY=... NODE_PROVIDER_URL=... DEPLOYER_PRIVATE_KEY=... yarn deploy:hardhat
 ```
 
 ## Publishing Contracts
@@ -53,10 +64,9 @@ yarn deploy
 If you want to publish a version of your contracts publicly, you can use one of the followings command:
 
 ```bash
-# --access public: publishing scoped public package as default npm account. Remove option [--access public] for private
-npm run publish --access public
+npm run publish
 # or
-yarn publish --access public
+yarn publish
 ```
 
 ## Collaboration

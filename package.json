@@ -4,28 +4,34 @@
     "lint": "solhint contracts/**/*.sol",
     "build": "npx thirdweb@5.24.0 detect",
     "deploy": "npx thirdweb@5.24.0 deploy",
-    "publish": "npx thirdweb@5.24.0 publish"
+    "publish": "npx thirdweb@5.24.0 publish",
+    "deploy:hardhat": "npx hardhat ignition deploy ./ignition/modules/TokenMaxSupply.js --network sepolia"
   },
   "devDependencies": {
-    "@matterlabs/hardhat-zksync-solc": "^0.3.17",
-    "hardhat": "^2.13.0"
+    "@matterlabs/hardhat-zksync-solc": "^1.1.4",
+    "@nomicfoundation/hardhat-ignition-ethers": "^0.15.4",
+    "hardhat": "^2.22.4"
   },
   "dependencies": {
-    "@thirdweb-dev/contracts": "^3.8.0",
-    "zksync-web3": "^0.14.3"
+    "@nomicfoundation/solidity-analyzer-darwin-x64": "^0.1.1",
+    "@thirdweb-dev/contracts": "^3.15.0",
+    "zksync-web3": "^0.17.1"
   },
-  "version": "1.0.1",
+  "version": "1.0.2",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/make-everything-simple/erc20-base-max-supply.git"
   },
   "keywords": [
-      "erc20",
-      "erc20-max-supply",
-      "thirdweb",
-      "contract",
-      "smart-contract"
+    "erc20",
+    "erc20-max-supply",
+    "thirdweb",
+    "contract",
+    "smart-contract"
   ],
   "author": "make-everything-simple",
-  "license": "MIT"
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
 }
